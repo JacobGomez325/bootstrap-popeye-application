@@ -1,0 +1,12 @@
+version: '3'
+services:
+  hello-word:
+    image: bootstrappopeyeapplications
+    ports:
+      - 8080:3000
+  db: 
+    image: postgres:15.2-alpine
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD='demo1234'
